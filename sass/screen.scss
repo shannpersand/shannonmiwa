@@ -1,0 +1,258 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import "normalize";
+
+
+/* ==========================================================================
+   mixins and variables
+   ========================================================================== */
+@mixin base {
+  display: block;
+  width: 100%;
+  padding: 5%;
+}
+
+$paper: #f0dcbd;
+$red: #fb4939;
+$blue: #114eae;
+$grey: #555555;
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Main Styles
+   ========================================================================== */
+body {
+  background: $paper;
+  font-family: 'franklin-gothic-urw-comp';
+}
+
+.line {
+  background: $blue;
+  border: 0;
+  height: 1px;
+}
+
+.thick {
+  height: 3px;
+}
+
+.red {
+  background: $red;
+}
+
+.container {
+  border: solid 20px #fefcf8;
+  color: $red;
+  text-align: center;
+  @include base;
+}
+
+h1 {
+  color: $blue;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+em {
+  display: block;
+  font-size: .5em;
+  font-style: italic;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'futura-pt';
+  font-size: 3.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: .8;
+}
+
+.small {
+  color: $blue;
+  display: block;
+  font-size: .5em;
+  font-family: 'adobe-garamond-pro';
+  font-style: italic;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  border-bottom: 1px solid $blue;
+  border-top: 1px solid $blue;
+  top: 0;
+  width: 100%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.medium {
+  font-size: .95em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 15px 0 10px;
+}
+
+.calligraphy {
+  font-family: 'futura-pt';
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.lettering {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
