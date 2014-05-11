@@ -242,15 +242,49 @@ h2 {
 }
 
 .calligraphy {
+  h3 {
   font-family: 'futura-pt';
   font-weight: 900;
   text-transform: uppercase;
+  }
+
+  &:hover {
+    color: $blue;
+  }
 }
 
-.lettering {
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  margin-left: 20px;
+.type-design {
+  h3 {
+    color: $red;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+
+    span {
+      font-family: 'futura-pt';
+      font-size: .25em;
+      font-weight: 400;
+    }
+  }
+
+  &:hover h3 {
+    color: $grey;
+  }
+}
+
+.coding {
+  background: $blue;
+  display: block;
+
+  h3 {
+    margin-top: 20px;
+    color: $paper;
+    font-family: 'futura-pt';
+    font-weight: 400;
+    font-size: 2.75em;
+    text-transform: uppercase;
+  }
+
 }
 
 nav ul {

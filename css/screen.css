@@ -873,21 +873,51 @@ h2 {
   margin: 15px 0 10px;
 }
 
-/* line 244, ../sass/screen.scss */
-.calligraphy {
+/* line 245, ../sass/screen.scss */
+.calligraphy h3 {
   font-family: 'futura-pt';
   font-weight: 900;
   text-transform: uppercase;
 }
-
-/* line 250, ../sass/screen.scss */
-.lettering {
-  text-transform: uppercase;
-  letter-spacing: 20px;
-  margin-left: 20px;
+/* line 251, ../sass/screen.scss */
+.calligraphy:hover {
+  color: #114eae;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
+.type-design h3 {
+  color: #fb4939;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+/* line 263, ../sass/screen.scss */
+.type-design h3 span {
+  font-family: 'futura-pt';
+  font-size: .25em;
+  font-weight: 400;
+}
+/* line 270, ../sass/screen.scss */
+.type-design:hover h3 {
+  color: #555555;
+}
+
+/* line 275, ../sass/screen.scss */
+.coding {
+  background: #114eae;
+  display: block;
+}
+/* line 279, ../sass/screen.scss */
+.coding h3 {
+  margin-top: 20px;
+  color: #f0dcbd;
+  font-family: 'futura-pt';
+  font-weight: 400;
+  font-size: 2.75em;
+  text-transform: uppercase;
+}
+
+/* line 290, ../sass/screen.scss */
 nav ul {
   list-style-type: none;
 }
