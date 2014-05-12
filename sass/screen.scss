@@ -137,6 +137,7 @@ $grey: #555555;
 a {
   color: $grey;
   text-decoration: none;
+  display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -163,6 +164,10 @@ body {
 
 .red {
   background: $red;
+}
+
+.blue {
+  background: $blue;
 }
 
 .container {
@@ -198,12 +203,12 @@ h2 {
 }
 
 .small {
-  color: $blue;
+  color: $grey;
   display: block;
   font-size: .5em;
-  font-family: 'adobe-garamond-pro';
+  font-family: 'futura-pt';
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -220,8 +225,8 @@ h2 {
   content: "";
   position: absolute;
   height: 10px;
-  border-bottom: 1px solid $blue;
-  border-top: 1px solid $blue;
+  border-bottom: 1px solid $grey;
+  border-top: 1px solid $grey;
   top: 0;
   width: 100%;
 }
@@ -259,11 +264,13 @@ h2 {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 2em;
+    margin-bottom: 30px;
 
     span {
       font-family: 'futura-pt';
       font-size: .25em;
       font-weight: 400;
+      margin-right: -10px;
     }
   }
 
@@ -273,18 +280,168 @@ h2 {
 }
 
 .coding {
-  background: $blue;
-  display: block;
 
   h3 {
-    margin-top: 20px;
     color: $paper;
     font-family: 'futura-pt';
-    font-weight: 400;
-    font-size: 2.75em;
+    font-weight: 300;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    background: $blue;
+    padding: 10px 0;
+  }
+
+  span {
+    display: block;
+    color: $blue;
+    font-style: italic;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 20px;
+    margin-left: 20px;
     text-transform: uppercase;
   }
 
+  hr {
+    margin-top: 0;
+  }
+
+  &:hover h3, &:hover hr {
+    background: $grey;
+  }
+
+  &:hover span {
+    color: $grey;
+  }
+}
+
+.signpainting {
+  position: relative;
+  h3 {
+    color: $red;
+    font-family: 'franklin-gothic-urw-comp';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  span {
+    font-family: 'futura-pt';
+    position: absolute;
+    font-size: .9em;
+    font-weight: 300;
+    color: $grey;
+    top: 18%;
+    margin-left: 5.5%;
+  }
+
+  .sign {
+    position: static;
+    color: $red;
+    font-family: 'franklin-gothic-urw-comp';
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &:hover h3, &:hover span {
+    color: $grey;
+  }
+}
+
+.evening {
+  h3 {
+    font-family: 'futura-pt';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: $grey;
+    margin-bottom: 30px;
+  }
+
+  span {
+    display: block;
+    font-family: 'futura-pt';
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: $grey;
+    border-top: solid 1px $grey;
+    border-bottom: solid 1px $grey;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &:hover h3, &:hover span {
+    color: $blue;
+  }
+}
+
+.otherwise {
+  margin: 0;
+  li {
+    display: inline-block;
+    width: 49%;
+    padding-bottom:15px;
+    &:first-child {
+      border-right: solid 3px $red;
+    }
+  }
+}
+
+.dribbble {
+  h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  span {
+    font-size: .75em;
+    font-style: italic;
+    font-family: 'futura-pt';
+    font-weight: 400;
+  }
+
+  &:hover {
+    h4, span {
+      color: $red;
+    }
+  }
+}
+
+.twitter {
+  h4 {
+    font-family: 'futura-pt';
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: .75em;
+  }
+
+  span {
+    font-size: .75em;
+    font-family: 'franklin-gothic-urw-comp';
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    h4, span {
+      color: $blue;
+    }
+  }
+}
+
+.email {
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .85em;
+  color: $blue;
+
+  span {
+    color: $grey;
+    font-weight: 400;
+  }
 }
 
 nav ul {

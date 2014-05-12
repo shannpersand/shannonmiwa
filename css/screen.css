@@ -747,9 +747,10 @@ table {
 a {
   color: #555555;
   text-decoration: none;
+  display: block;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -757,30 +758,35 @@ h1, h2, h3, h4, h5, h6 {
 /* ==========================================================================
    Main Styles
    ========================================================================== */
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 body {
   background: #f0dcbd;
   font-family: 'franklin-gothic-urw-comp';
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .line {
   background: #114eae;
   border: 0;
   height: 1px;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .thick {
   height: 3px;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .red {
   background: #fb4939;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
+.blue {
+  background: #114eae;
+}
+
+/* line 173, ../sass/screen.scss */
 .container {
   border: solid 20px #fefcf8;
   color: #fb4939;
@@ -790,7 +796,7 @@ body {
   padding: 5%;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 h1 {
   color: #114eae;
   font-weight: 700;
@@ -801,14 +807,14 @@ h1 {
   margin: 0;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 em {
   display: block;
   font-size: .5em;
   font-style: italic;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 h2 {
   margin: 0;
   font-family: 'futura-pt';
@@ -818,54 +824,54 @@ h2 {
   line-height: .8;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .small {
-  color: #114eae;
+  color: #555555;
   display: block;
   font-size: .5em;
-  font-family: 'adobe-garamond-pro';
+  font-family: 'futura-pt';
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .fancy {
   line-height: 0.5;
   text-align: center;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .fancy span {
   display: inline-block;
   position: relative;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .fancy span:before,
 .fancy span:after {
   content: "";
   position: absolute;
   height: 10px;
-  border-bottom: 1px solid #114eae;
-  border-top: 1px solid #114eae;
+  border-bottom: 1px solid #555555;
+  border-top: 1px solid #555555;
   top: 0;
   width: 100%;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .fancy span:before {
   right: 100%;
   margin-right: 15px;
 }
 
-/* line 232, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .medium {
   font-size: .95em;
   font-weight: 700;
@@ -873,51 +879,201 @@ h2 {
   margin: 15px 0 10px;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .calligraphy h3 {
   font-family: 'futura-pt';
   font-weight: 900;
   text-transform: uppercase;
 }
-/* line 251, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .calligraphy:hover {
   color: #114eae;
 }
 
-/* line 257, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .type-design h3 {
   color: #fb4939;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 2em;
+  margin-bottom: 30px;
 }
-/* line 263, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .type-design h3 span {
   font-family: 'futura-pt';
   font-size: .25em;
   font-weight: 400;
+  margin-right: -10px;
 }
-/* line 270, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .type-design:hover h3 {
   color: #555555;
 }
 
-/* line 275, ../sass/screen.scss */
-.coding {
-  background: #114eae;
-  display: block;
-}
-/* line 279, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .coding h3 {
-  margin-top: 20px;
   color: #f0dcbd;
   font-family: 'futura-pt';
-  font-weight: 400;
-  font-size: 2.75em;
+  font-weight: 300;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background: #114eae;
+  padding: 10px 0;
+}
+/* line 294, ../sass/screen.scss */
+.coding span {
+  display: block;
+  color: #114eae;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 20px;
+  margin-left: 20px;
   text-transform: uppercase;
 }
+/* line 305, ../sass/screen.scss */
+.coding hr {
+  margin-top: 0;
+}
+/* line 309, ../sass/screen.scss */
+.coding:hover h3, .coding:hover hr {
+  background: #555555;
+}
+/* line 313, ../sass/screen.scss */
+.coding:hover span {
+  color: #555555;
+}
 
-/* line 290, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
+.signpainting {
+  position: relative;
+}
+/* line 320, ../sass/screen.scss */
+.signpainting h3 {
+  color: #fb4939;
+  font-family: 'franklin-gothic-urw-comp';
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 328, ../sass/screen.scss */
+.signpainting span {
+  font-family: 'futura-pt';
+  position: absolute;
+  font-size: .9em;
+  font-weight: 300;
+  color: #555555;
+  top: 18%;
+  margin-left: 5.5%;
+}
+/* line 338, ../sass/screen.scss */
+.signpainting .sign {
+  position: static;
+  color: #fb4939;
+  font-family: 'franklin-gothic-urw-comp';
+  font-size: 2.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+/* line 348, ../sass/screen.scss */
+.signpainting:hover h3, .signpainting:hover span {
+  color: #555555;
+}
+
+/* line 354, ../sass/screen.scss */
+.evening h3 {
+  font-family: 'futura-pt';
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #555555;
+  margin-bottom: 30px;
+}
+/* line 363, ../sass/screen.scss */
+.evening span {
+  display: block;
+  font-family: 'futura-pt';
+  font-weight: 300;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #555555;
+  border-top: solid 1px #555555;
+  border-bottom: solid 1px #555555;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+/* line 376, ../sass/screen.scss */
+.evening:hover h3, .evening:hover span {
+  color: #114eae;
+}
+
+/* line 381, ../sass/screen.scss */
+.otherwise {
+  margin: 0;
+}
+/* line 383, ../sass/screen.scss */
+.otherwise li {
+  display: inline-block;
+  width: 49%;
+  padding-bottom: 15px;
+}
+/* line 387, ../sass/screen.scss */
+.otherwise li:first-child {
+  border-right: solid 3px #fb4939;
+}
+
+/* line 394, ../sass/screen.scss */
+.dribbble h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* line 398, ../sass/screen.scss */
+.dribbble span {
+  font-size: .75em;
+  font-style: italic;
+  font-family: 'futura-pt';
+  font-weight: 400;
+}
+/* line 406, ../sass/screen.scss */
+.dribbble:hover h4, .dribbble:hover span {
+  color: #fb4939;
+}
+
+/* line 413, ../sass/screen.scss */
+.twitter h4 {
+  font-family: 'futura-pt';
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: .75em;
+}
+/* line 420, ../sass/screen.scss */
+.twitter span {
+  font-size: .75em;
+  font-family: 'franklin-gothic-urw-comp';
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/* line 428, ../sass/screen.scss */
+.twitter:hover h4, .twitter:hover span {
+  color: #114eae;
+}
+
+/* line 434, ../sass/screen.scss */
+.email {
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .85em;
+  color: #114eae;
+}
+/* line 441, ../sass/screen.scss */
+.email span {
+  color: #555555;
+  font-weight: 400;
+}
+
+/* line 447, ../sass/screen.scss */
 nav ul {
   list-style-type: none;
 }
