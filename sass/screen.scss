@@ -155,11 +155,11 @@ body {
 .line {
   background: $blue;
   border: 0;
-  height: 1px;
+  height: .05em;
 }
 
 .thick {
-  height: 3px;
+  height: .1em;
 }
 
 .red {
@@ -441,6 +441,19 @@ h2 {
   span {
     color: $grey;
     font-weight: 400;
+  }
+
+  .dot {
+    background: $grey;
+    height:.3em;
+    width: .3em;
+    border-radius: 50%;
+    margin-top: 3%;
+    float: left;
+  }
+  .dot2 {
+    @extend .dot;
+    float: right;
   }
 }
 

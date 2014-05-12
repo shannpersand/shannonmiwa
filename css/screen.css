@@ -768,12 +768,12 @@ body {
 .line {
   background: #114eae;
   border: 0;
-  height: 1px;
+  height: .05em;
 }
 
 /* line 161, ../sass/screen.scss */
 .thick {
-  height: 3px;
+  height: .1em;
 }
 
 /* line 165, ../sass/screen.scss */
@@ -1072,8 +1072,21 @@ h2 {
   color: #555555;
   font-weight: 400;
 }
+/* line 446, ../sass/screen.scss */
+.email .dot, .email .dot2 {
+  background: #555555;
+  height: .3em;
+  width: .3em;
+  border-radius: 50%;
+  margin-top: 3%;
+  float: left;
+}
+/* line 454, ../sass/screen.scss */
+.email .dot2 {
+  float: right;
+}
 
-/* line 447, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 nav ul {
   list-style-type: none;
 }
