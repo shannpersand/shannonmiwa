@@ -1,0 +1,17 @@
+@media print {
+  body {
+	font-size: 100%;
+	background-color: white;
+	background-image: none;
+  }
+
+  .print-hide {
+	display: none;
+  }
+
+  .print-show {
+	display: block;
+	font-family: benton-modern-display, serif;
+	font-size: 20pt
+  }
+}
