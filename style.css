@@ -312,6 +312,54 @@ footer h2 {
   background: #0004;
 }
 
+/* resume */
+.resume-body {
+  margin-inline: auto;
+  width: 60%;
+  padding-block-start: 12rem;
+}
+.resume-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-block-end: 4rem;
+  border-top: 1px solid #fff2;
+}
+
+.resume-info  {
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 1rem;
+  padding-block-end: 2rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.date {
+  display: flex;
+  font-size: 1rem;
+}
+
+.resume-row h3 {
+  color: var(--color-strong);
+  font-family: var(--display-font);
+  font-size: 2rem;
+  padding-block-end: .5rem;
+}
+
+.resume-row h4 {
+  font-family: var(--display-font);
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.resume-text {
+  font-size: 1rem;
+}
+
 /* animation */
 
 @keyframes flare {
