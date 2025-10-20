@@ -6,10 +6,4 @@
   .print-hide {
 	display: none;
   }
-
-  .print-show {
-	display: block;
-	font-family: benton-modern-display, serif;
-	font-size: 20pt
-  }
 }
