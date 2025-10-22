@@ -314,20 +314,18 @@ a {
 }
 
 .description-text a {
-  background: #0002;
-  display: flex;
-  color: #fff7;
-  font-size: 1rem;
-  border-radius: 4px;
-  padding-inline: 20px;
-  padding-block: 15px;
-  justify-content: center;
+  color: var(--color-strong);
+  text-underline-offset: 3px;
+  text-decoration: #fff5 underline;
+  text-decoration-thickness: 2px;
+  transition: 100ms all ease;
 }
 
 .description-text a:hover {
-  color: #fff9;
-  background: #0003;
-  border-bottom: none;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  text-decoration: #fff8 underline;
+  transition: 100ms all ease;
 }
 
 .project-list-wrapper {
