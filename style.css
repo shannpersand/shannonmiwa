@@ -379,6 +379,25 @@ a {
   font-size: 1.6rem;
 }
 
+.project-result a {
+  background: #fff2;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  color: var(--color-strong);
+  padding-inline: 20px;
+  padding-block: 10px;
+  transition: 100ms all ease;
+  max-width: 50%;
+  margin-block-start: 20px;
+}
+
+.project-result a:hover {
+  background: #fff3;
+  transition: 100ms all ease;
+}
+
 .image-container {
   width: 100%;
 }
