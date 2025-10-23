@@ -70,11 +70,11 @@
   }
 
   .email:before {
-    content: 'sheriff@'
+    content: 'hello@'
   }
 
   .email:after {
-    content: '.town'
+    content: '.com'
   }
 
   .fire {
