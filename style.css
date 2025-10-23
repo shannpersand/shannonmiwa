@@ -493,6 +493,25 @@ footer h2 {
 
 .resume-text {
   font-size: 1rem;
+  width: 90%;
+}
+
+.resume-text li:before {
+  content: '→';
+  position: absolute;
+  left: -1.2rem;
+  margin-top: 2px;
+  font-size: .9rem;
+}
+
+.resume-text li {
+  position: relative;
+  font-size: 1rem;
+  padding-block-end: 10px;
+}
+
+.print-show {
+  display: none;
 }
 
 /* animation */

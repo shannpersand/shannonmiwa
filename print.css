@@ -3,7 +3,91 @@
 	font-size: 100%;
   }
 
+  .resume-body {
+    padding-block-start: 9rem;
+    padding-block-end: 6.8rem;
+    width: 100%;
+    padding-inline: 14%;
+  }
+
+  .print-show {
+  display: block;
+  }
+
   .print-hide {
 	display: none;
   }
+
+  .header {
+    padding-inline: 4%;
+  }
+
+  .resume-contact {
+    font-size: 1rem;
+    font-family: var(--display-font);
+    display: flex;
+  }
+
+  .resume-info {
+    padding-block-start: 1.2rem;
+    padding-block-end: .6rem;
+  }
+
+  .resume-info h3 {
+    font-size: 1.2rem;
+    padding-block-end: 0;
+    padding-block-start: 0;
+  }
+
+  .resume-info h5 {
+    font-size: .8rem;
+  }
+
+  .resume-info h4 {
+    font-size: 1rem;
+  }
+
+  .resume-row {
+    padding-block-end: 1.4rem;
+  }
+
+  .resume-text li {
+    font-size: .7rem;
+    padding-block-end: .2rem;
+  }
+
+  .resume-text li:before {
+    margin-top: 1px;
+    font-size: .7rem;
+  }
+
+  .phone:before {
+    content: '(415) '
+  }
+
+  .phone:after {
+    content: '8205'
+  }
+
+  .email:before {
+    content: 'sheriff@'
+  }
+
+  .email:after {
+    content: '.town'
+  }
+
+  .fire {
+    height: 6rem;
+  }
+
+  footer {
+    height: 14rem;
+    padding-block-start: 3rem;
+  }
+
+  footer h2 {
+    padding-block-start: 4rem;
+  }
+
 }
