@@ -425,7 +425,7 @@ footer h2 {
   display: flex;
   justify-content: space-between;
   padding-inline: 2%;
-  padding-block-end: 8rem;
+  padding-block-end: 4rem;
   width: 100%;
   position: relative;
   z-index: 2;
