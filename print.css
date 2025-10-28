@@ -4,8 +4,8 @@
   }
 
   .resume-body {
-    padding-block-start: 9rem;
-    padding-block-end: 6.8rem;
+    padding-block-start: 7rem;
+    padding-block-end: 5.3rem;
     width: 100%;
     padding-inline: 14%;
   }
@@ -20,6 +20,22 @@
 
   .header {
     padding-inline: 4%;
+    border-bottom: 1px solid #fff3;
+  }
+
+ h1 a {
+    font-size: 1.6rem;
+    color: var(--color-strong);
+  }
+
+  .header h4 {
+    font-size: .8rem;
+    font-family: var(--display-font);
+  }
+
+  .top-matter {
+    display: flex;
+    flex-direction: column;
   }
 
   .resume-contact {
@@ -28,9 +44,15 @@
     display: flex;
   }
 
+  .sub-contact {
+    font-size: .7rem;
+    text-align: right;
+  }
+
   .resume-info {
-    padding-block-start: 1.2rem;
-    padding-block-end: .6rem;
+    padding-block-start: 1rem;
+    padding-block-end: .4rem;
+    flex-direction: column;
   }
 
   .resume-info h3 {
@@ -40,7 +62,7 @@
   }
 
   .resume-info h5 {
-    font-size: .8rem;
+    font-size: .7rem;
   }
 
   .resume-info h4 {
@@ -48,15 +70,18 @@
   }
 
   .resume-row {
-    padding-block-end: 1.4rem;
+    border-top: 0;
+    padding-block-end: .6rem;
   }
 
   .resume-text li {
-    font-size: .7rem;
+    font-size: .6rem;
     padding-block-end: .2rem;
   }
 
   .resume-text li:before {
+    content: '•';
+    left: -8px;
     margin-top: 1px;
     font-size: .7rem;
   }
